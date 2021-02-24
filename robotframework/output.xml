@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.6 on win32)" generated="20210119 14:32:42.306" rpa="false">
+<suite id="s1" name="Register Success" source="C:\Users\MSI\Desktop\Software Engineer Lab 3\UAT-Lab5-001\Test Case 2\register_success.robot">
+<test id="s1-t1" name="Search case">
+<kw name="เปิดเว็บ EventRegistration.html">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210119 14:32:42.519" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5500/EventRegistration.html'.</msg>
+<status status="PASS" starttime="20210119 14:32:42.519" endtime="20210119 14:32:45.836"></status>
+</kw>
+<status status="PASS" starttime="20210119 14:32:42.518" endtime="20210119 14:32:45.836"></status>
+</kw>
+<kw name="fill_blank">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=firstname</arg>
+<arg>${fname}</arg>
+</arguments>
+<msg timestamp="20210119 14:32:45.838" level="INFO">Typing text 'Somsri' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210119 14:32:45.838" endtime="20210119 14:32:45.934"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=lastname</arg>
+<arg>${lname}</arg>
+</arguments>
+<msg timestamp="20210119 14:32:45.935" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210119 14:32:45.934" endtime="20210119 14:32:46.019"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20210119 14:32:46.019" level="INFO">Typing text 'somsri@kkumail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210119 14:32:46.019" endtime="20210119 14:32:46.103"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=registerButton</arg>
+</arguments>
+<msg timestamp="20210119 14:32:46.104" level="INFO">Clicking button 'id=registerButton'.</msg>
+<status status="PASS" starttime="20210119 14:32:46.104" endtime="20210119 14:32:46.177"></status>
+</kw>
+<status status="PASS" starttime="20210119 14:32:45.837" endtime="20210119 14:32:46.178"></status>
+</kw>
+<kw name="Welcome Page Should Be Open">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>http://127.0.0.1:5500/Success.html?firstname=Somsri&amp;lastname=Sodsai&amp;email=somsri%40kkumail.com</arg>
+</arguments>
+<msg timestamp="20210119 14:32:46.184" level="INFO">Current location is 'http://127.0.0.1:5500/Success.html?firstname=Somsri&amp;lastname=Sodsai&amp;email=somsri%40kkumail.com'.</msg>
+<status status="PASS" starttime="20210119 14:32:46.179" endtime="20210119 14:32:46.184"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20210119 14:32:46.188" level="INFO">Page title is 'Success'.</msg>
+<status status="PASS" starttime="20210119 14:32:46.184" endtime="20210119 14:32:46.188"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//h1</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20210119 14:32:46.188" level="INFO">Verifying element '//h1' contains exact text 'Success'.</msg>
+<status status="PASS" starttime="20210119 14:32:46.188" endtime="20210119 14:32:46.210"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//h2</arg>
+<arg>Thank you for participating in our event</arg>
+</arguments>
+<msg timestamp="20210119 14:32:46.210" level="INFO">Verifying element '//h2' contains exact text 'Thank you for participating in our event'.</msg>
+<status status="PASS" starttime="20210119 14:32:46.210" endtime="20210119 14:32:46.231"></status>
+</kw>
+<status status="PASS" starttime="20210119 14:32:46.178" endtime="20210119 14:32:46.231"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210119 14:32:46.231" endtime="20210119 14:32:48.332"></status>
+</kw>
+<status status="PASS" starttime="20210119 14:32:42.517" endtime="20210119 14:32:48.333" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210119 14:32:42.308" endtime="20210119 14:32:48.337"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Register Success">Register Success</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
